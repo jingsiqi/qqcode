@@ -5,10 +5,10 @@
 header ( "Content-type: text/html; charset=utf-8" );
  
 // 配置数据库
-$dbserver = "172.17.2.14";
+$dbserver = "127.0.0.1";
 $dbusername = "root";
-$dbpassword = "root123456";
-$database = $_GET["db"] ?? 'zdlh_api';
+$dbpassword = "caicai";
+$database = $_GET["db"] ?? 'ok';
 $dsn = 'mysql:dbname='.$database.';host='.$dbserver;
 // 其他配置
 $title = $database.'.数据字典';
