@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>中大联合-原型在线版</title>
+        <title>中大联合-数据字典在线版</title>
     </head>
     <style>
         body
-        { 
+        {
             background-image: url(bgimage.jpg);
             background-repeat: repeat;
             font-size: 24px;
@@ -21,11 +21,11 @@
         }
     </style>
     <body>
-        <?php if(!empty($dir_name)) {?>        
-        <?php foreach($dir_name as $value){?>        
+        <?php if(!empty($db)) {?>
+        <?php foreach($db as $value){?>
         <div>
-            <a href="/prototype/<?php echo $value?>/">原型<?php echo $value?></a>
-        </div>                
+            <a href="/tablelist.php?db=<?php echo $value?>"><?php echo $value?></a>
+        </div>
         <?php } ?>
         <?php } ?>
     </body>
