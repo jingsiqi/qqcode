@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>中大联合-原型在线版</title>
+    </head>
+    <style>
+        body
+        { 
+            background-image: url(bgimage.jpg);
+            background-repeat: repeat;
+            font-size: 24px;
+            text-align: center;
+        }
+        div {
+            top:15px;
+            left: 47%;
+            position: relative;
+            text-align: left;
+            width: 50%;
+        }
+    </style>
+    <body>
+        <?php if(!empty($dir_name)) {?>        
+        <?php foreach($dir_name as $value){?>        
+        <div>
+            <a href="/prototype/<?php echo $value?>/">原型<?php echo $value?></a>
+        </div>                
+        <?php } ?>
+        <?php } ?>
+    </body>
+</html>
